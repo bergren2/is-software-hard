@@ -9,8 +9,22 @@
         text-align: center;
         font-family: 'Playfair Display SC', serif;
       }
+
+      .subtext {
+        font-size: 0.25em;
+      }
     </style>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        var currentDate = new Date();
+
+        //Change the message on April 1st
+        if (currentDate.getMonth() === 3 && currentDate.getDate() === 1) {
+          document.body.innerHTML = '<div>No</div><div class="subtext">it is soft</div>';
+        }//end if
+      });
+    </script>
   </head>
   <body>
     Yes.
